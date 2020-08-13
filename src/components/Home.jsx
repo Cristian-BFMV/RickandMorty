@@ -15,19 +15,39 @@ const Home = () => {
           </p>
         </div>
         <div className="social-media-container">
-          <p className="home-info-text">Developed by Cristian Camilo Mendoza Mendoza</p>
+          <p className="home-info-text">Developed by Cristian Camilo Mendoza Mancera</p>
           <h3 className="social-media-title">Social Media</h3>
           <div className="social-media-icons">
-            <a href="https://www.facebook.com/MendozaCri" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/MendozaCri"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-media-links"
+            >
               <img src="https://img.icons8.com/ios/30/000000/facebook.png" alt="facebook-icon" />
             </a>
-            <a href="https://www.instagram.com/ccamilom.m/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/ccamilom.m/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-media-links"
+            >
               <img src="https://img.icons8.com/ios/30/000000/instagram-new.png" alt="instagram-icon" />
             </a>
-            <a href="https://twitter.com/ccamilo_mm?s=09" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/ccamilo_mm?s=09"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-media-links"
+            >
               <img src="https://img.icons8.com/ios/30/000000/twitter.png" alt="instagram-icon" />
             </a>
-            <a href="https://github.com/Cristian-BFMV" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/Cristian-BFMV"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-media-links"
+            >
               <img src="https://img.icons8.com/wired/30/000000/github.png" alt="instagram-icon" />
             </a>
           </div>

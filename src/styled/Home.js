@@ -37,6 +37,10 @@ const HomeStyles = styled.article`
   .social-media-title {
     font-size: 1.7rem;
   }
+
+  .social-media-links {
+    margin: 0 0.2rem;
+  }
 `;
 
 export default HomeStyles;

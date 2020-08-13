@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
         <ul className="nav-list">
           <li className="nav-item">
-            <NavLink to="/" className="nav-link" activeStyle={activeLink}>
+            <NavLink to="/" className="nav-link" activeStyle={activeLink} exact>
               Inicio
             </NavLink>
           </li>
