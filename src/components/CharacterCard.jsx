@@ -1,22 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CharacterCardStyles from '../styled/CharacterCard';
 
-const CharacterCard = ({ name, status, species, gender, origin, location, image }) => (
-  <CharacterCardStyles>
+const CharacterCard = ({ id, name, status, species, gender, origin, location, image }) => (
+  <CharacterCardStyles status={status}>
     <div className="card-image-container">
-      <img src={image} alt="Character" className="card-image" />
+      <Link to={`/character/${id}`}>
+        <img src={image} alt="Character" className="card-image" />
+      </Link>
     </div>
     <div className="card-content-container">
       <h2>{name}</h2>
-      <h3>Estado</h3>
-      <p>{status}</p>
-      <h3>Especie</h3>
+      <h3>Status</h3>
+      <p className="status-text">{status}</p>
+      <h3>Species</h3>
       <p>{species}</p>
-      <h3>Genero</h3>
+      <h3>Gender</h3>
       <p>{gender}</p>
-      <h3>Lugar de origen</h3>
+      <h3>Origin</h3>
       <p>{origin}</p>
-      <h3>Ubicación</h3>
+      <h3>Location</h3>
       <p>{location}</p>
     </div>
   </CharacterCardStyles>

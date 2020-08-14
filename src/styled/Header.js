@@ -7,8 +7,8 @@ const HeaderStyles = styled.header`
     align-items: center;
     margin: 0;
     padding: 0;
-    min-height: 10vh;
-    height: 12vh;
+    min-height: 8vh;
+    height: 10vh;
     border-bottom: 1px solid #202329;
   }
 

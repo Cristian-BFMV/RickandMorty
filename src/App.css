@@ -5,3 +5,8 @@
   margin: 0;
   padding: 0;
 }
+
+.holiwi {
+  flex: 75%;
+  margin-left: 4%;
+}

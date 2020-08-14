@@ -13,6 +13,16 @@ const CharacterListStyles = styled.section`
     flex-flow: row wrap;
     flex: 0 0 100%;
   }
+
+  .character-list-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pagination-button {
+    margin: 0.5rem 0.4rem;
+  }
 `;
 
 export default CharacterListStyles;
