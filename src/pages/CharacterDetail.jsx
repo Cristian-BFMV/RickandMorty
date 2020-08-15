@@ -2,6 +2,8 @@ import React, { memo } from 'react';
 import { useParams } from 'react-router-dom';
 import useFetchData from '../customhooks/useFetchData';
 import Character from '../components/Character';
+import CharacterEpisodesList from './CharacterEpisodesList';
+import Spinner from '../components/Spinner';
 import CharacterDetailStyles from '../styled/CharacterDetail';
 
 const CharacterDetail = memo(() => {
@@ -11,24 +13,23 @@ const CharacterDetail = memo(() => {
   return (
     <div>
       {loading ? (
-        <h2>Loading</h2>
+        <Spinner />
       ) : (
         <CharacterDetailStyles>
-          <Character
-            name={data.name}
-            status={data.status}
-            origin={data.origin.name}
-            location={data.location.name}
-            image={data.image}
-          />
-          <div className="holiwi">
-            <ul>
-              <li>Hola wey</li>
-              <li>Hola wey</li>
-              <li>Hola wey</li>
-              <li>Hola wey</li>
-            </ul>
-          </div>
+          {error ? (
+            <h1>Lo sentimos, ha ocurrido un error</h1>
+          ) : (
+            <>
+              <Character
+                name={data.name}
+                status={data.status}
+                origin={data.origin.name}
+                location={data.location.name}
+                image={data.image}
+              />
+              <CharacterEpisodesList episodes={data.episode} />
+            </>
+          )}
         </CharacterDetailStyles>
       )}
     </div>

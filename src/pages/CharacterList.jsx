@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import useFetchData from '../customhooks/useFetchData';
-import Button from '../components/Button';
-import Spinner from '../components/Spinner';
 import CharacterCard from '../components/CharacterCard';
+import CharacterListPagination from '../components/CharacterListPagination';
+import Spinner from '../components/Spinner';
 import CharacterListStyles from '../styled/CharacterList';
 
 const CharacterList = () => {
@@ -39,21 +39,15 @@ const CharacterList = () => {
                 ))}
               </div>
               <div className="character-list-pagination">
-                <Button
-                  text="Previous"
-                  onClick={() => {
+                <CharacterListPagination
+                  prevFunct={() => {
                     updateUrl(data.info.prev);
                   }}
-                  className="pagination-button"
-                  disable={data.info.prev ? false : true}
-                />
-                <Button
-                  text="Next"
-                  onClick={() => {
+                  prevDisable={data.info.prev ? false : true}
+                  nextFunct={() => {
                     updateUrl(data.info.next);
                   }}
-                  className="pagination-button"
-                  disable={data.info.next ? false : true}
+                  nextDisable={data.info.next ? false : true}
                 />
               </div>
             </>

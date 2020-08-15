@@ -6,7 +6,34 @@
   padding: 0;
 }
 
-.holiwi {
-  flex: 75%;
-  margin-left: 4%;
+.episode-container {
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  padding: 1.2rem;
+}
+
+.episode-number > h3 {
+  font-size: 1.4rem;
+  color: rgb(36, 36, 36);
+}
+
+.episode-info {
+  display: flex;
+  margin: 0.6rem 0 0;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.episode-name,
+.episode-air-date,
+.episode-season {
+  flex: 0 0 30%;
+  font-weight: lighter;
+}
+
+.episode-info-title,
+.episode-info-title,
+.episode-info-title {
+  font-weight: bold;
+  margin: 0 0.4rem 0 0;
 }
