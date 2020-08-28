@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import useFetchData from '../customhooks/useFetchData';
 import CharacterCard from '../components/CharacterCard';
-import CharacterListPagination from '../components/CharacterListPagination';
+import ListPagination from '../components/ListPagination';
 import Spinner from '../components/Spinner';
 import CharacterListStyles from '../styled/CharacterList';
 
@@ -39,7 +39,7 @@ const CharacterList = () => {
                 ))}
               </div>
               <div className="character-list-pagination">
-                <CharacterListPagination
+                <ListPagination
                   prevFunct={() => {
                     updateUrl(data.info.prev);
                   }}

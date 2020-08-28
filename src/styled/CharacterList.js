@@ -23,6 +23,18 @@ const CharacterListStyles = styled.section`
   .pagination-button {
     margin: 0.5rem 0.4rem;
   }
+
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+    & {
+      margin: 2rem 5%;
+    }
+  }
+
+  @media only screen and (max-width: 599px) {
+    & {
+      margin: 2rem 7%;
+    }
+  }
 `;
 
 export default CharacterListStyles;

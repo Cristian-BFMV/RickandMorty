@@ -18,7 +18,7 @@ const CharacterStyles = styled.article`
 
   .character-info-container > h2 {
     font-size: 2.3rem;
-    color: rgb(78, 78, 78);
+    color: black;
     border-bottom: 1px solid rgb(216, 216, 216);
     margin: 0.6rem 0;
   }
@@ -30,12 +30,10 @@ const CharacterStyles = styled.article`
   .character-info > h3 {
     font-size: 1.7rem;
     font-weight: 500;
-    color: rgb(78, 78, 78);
   }
 
   .character-info > p {
     font-size: 1.2rem;
-    color: rgb(105, 105, 105);
   }
 `;
 

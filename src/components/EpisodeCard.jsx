@@ -1,7 +1,8 @@
 import React from 'react';
+import EpisodeCardStyles from '../styled/EpisodeCard';
 
 const EpisodeCard = ({ id, name, airDate, episode }) => (
-  <div className="episode-container">
+  <EpisodeCardStyles>
     <div className="episode-number">
       <h3>Episode #{id}</h3>
     </div>
@@ -25,7 +26,7 @@ const EpisodeCard = ({ id, name, airDate, episode }) => (
         </p>
       </div>
     </div>
-  </div>
+  </EpisodeCardStyles>
 );
 
 export default EpisodeCard;

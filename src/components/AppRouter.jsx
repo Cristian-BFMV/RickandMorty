@@ -7,7 +7,7 @@ import Home from './Home';
 import Navbar from './Navbar';
 
 const AppRouter = () => (
-  <div className="container">
+  <>
     <Navbar />
     <main>
       <Switch>
@@ -22,7 +22,7 @@ const AppRouter = () => (
         </Route>
       </Switch>
     </main>
-  </div>
+  </>
 );
 
 export default AppRouter;
