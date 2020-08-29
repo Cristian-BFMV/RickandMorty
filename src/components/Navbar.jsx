@@ -5,6 +5,15 @@ import rickandmorty from '../assets/img/rickandmorty.png';
 
 const activeLink = { color: 'rgb(143, 143, 143)' };
 
+const navSlide = () => {
+  const navlist = document.querySelector('.nav-list');
+  const burger = document.querySelector('.burger-menu');
+  const body = document.body;
+  body.classList.toggle('modal-open');
+  navlist.classList.toggle('responsive-nav-list');
+  burger.classList.toggle('toggle');
+};
+
 const Navbar = () => (
   <HeaderStyles>
     <nav className="navbar">
@@ -34,6 +43,11 @@ const Navbar = () => (
           </NavLink>
         </li>
       </ul>
+      <div className="burger-menu" onClick={navSlide}>
+        <div className="burger-line line1"></div>
+        <div className="burger-line line2"></div>
+        <div className="burger-line line3"></div>
+      </div>
     </nav>
   </HeaderStyles>
 );
