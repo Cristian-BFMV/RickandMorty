@@ -7,7 +7,9 @@ const Character = ({ name, origin, location, status, image }) => (
       <img src={image} alt="Character" className="character-image" />
     </div>
     <div className="character-info-container">
-      <h2>{name}</h2>
+      <div className="character-name">
+        <h2>{name}</h2>
+      </div>
       <div className="character-info">
         <h3>Status</h3>
         <p>{status}</p>

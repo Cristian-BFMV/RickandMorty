@@ -4,6 +4,7 @@ const CharacterDetailStyles = styled.section`
   & {
     margin: 2% 10%;
     display: flex;
+    flex-flow: row wrap;
   }
 `;
 

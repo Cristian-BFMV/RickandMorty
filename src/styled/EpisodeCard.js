@@ -8,7 +8,6 @@ const EpisodeCardStyles = styled.div`
   }
 
   .episode-number > h3 {
-    font-size: 1.4rem;
     color: rgb(36, 36, 36);
   }
 
@@ -16,7 +15,7 @@ const EpisodeCardStyles = styled.div`
     display: flex;
     margin: 0.6rem 0 0;
     justify-content: space-between;
-    font-size: 1.2rem;
+    flex-flow: row wrap;
   }
 
   .episode-name,
@@ -24,10 +23,9 @@ const EpisodeCardStyles = styled.div`
   .episode-season {
     flex: 0 0 30%;
     font-weight: lighter;
+    margin: 0.2rem 0;
   }
 
-  .episode-info-title,
-  .episode-info-title,
   .episode-info-title {
     font-weight: bold;
     margin: 0 0.4rem 0 0;
