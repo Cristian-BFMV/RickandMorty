@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
 //Components
-import CharacterDetail from '../pages/CharacterDetail';
+
 import CharacterList from '../pages/CharacterList';
 import Home from './Home';
 import Navbar from './Navbar';
+import Spinner from './Spinner';
+
+const CharacterDetail = lazy(() => import('../pages/CharacterDetail'));
 
 const AppRouter = () => (
   <>
@@ -18,7 +21,9 @@ const AppRouter = () => (
           <CharacterList />
         </Route>
         <Route path="/character/:id">
-          <CharacterDetail />
+          <Suspense fallback={<Spinner />}>
+            <CharacterDetail />
+          </Suspense>
         </Route>
       </Switch>
     </main>
