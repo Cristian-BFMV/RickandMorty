@@ -26,7 +26,7 @@ const Home = () => (
             <img src="https://img.icons8.com/ios/30/000000/facebook.png" alt="facebook-icon" />
           </a>
           <a
-            href="https://www.instagram.com/ccamilom.m/"
+            href="https://www.instagram.com/ccamilomm"
             target="_blank"
             rel="noopener noreferrer"
             className="social-media-links"

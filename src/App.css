@@ -18,3 +18,7 @@ body.modal-open {
   min-width: 900px for table landscape mode
   min-width: 1200px for desktop
 */
+
+.episode-container {
+  margin: 2% 10%;
+}

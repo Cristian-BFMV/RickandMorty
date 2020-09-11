@@ -11,7 +11,7 @@ const CharacterDetail = memo(() => {
   const [data, loading, error] = useFetchData(`https://rickandmortyapi.com/api/character/${id}`);
 
   return (
-    <div>
+    <>
       {loading ? (
         <Spinner />
       ) : (
@@ -32,7 +32,7 @@ const CharacterDetail = memo(() => {
           )}
         </CharacterDetailStyles>
       )}
-    </div>
+    </>
   );
 });
 

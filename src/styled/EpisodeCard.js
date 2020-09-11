@@ -7,6 +7,10 @@ const EpisodeCardStyles = styled.div`
     padding: 1.2rem;
   }
 
+  .episode-link {
+    color: black;
+  }
+
   .episode-number > h3 {
     color: rgb(36, 36, 36);
   }

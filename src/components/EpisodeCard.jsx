@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import EpisodeCardStyles from '../styled/EpisodeCard';
 
 const EpisodeCard = ({ id, name, airDate, episode }) => (
   <EpisodeCardStyles>
     <div className="episode-number">
-      <h3>Episode #{id}</h3>
+      <Link to={`/episode/${id}`} className="episode-link">
+        <h3>Episode #{id}</h3>
+      </Link>
     </div>
     <div className="episode-info">
       <div className="episode-name">
